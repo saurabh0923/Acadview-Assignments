@@ -39,7 +39,19 @@ function solve(){
         result.innerHTML = "Please fill in all 3 coefficient";
     }
 }
-
+function clearfield()
+{
+    coefA.value='';
+    console.log(coefA.value);
+    coefB.value='';
+    console.log(coefB.value);
+    coefC.value='';
+    console.log(coefC.value);
+    
+    document.getElementById("a").innerHTML="a";
+    document.getElementById("b").innerHTML="b";
+    document.getElementById("c").innerHTML="c";
+}
 function getDiscriminant(a, b, c){
     return Math.pow(b, 2)-4*a*c;
 }
